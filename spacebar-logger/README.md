@@ -1,43 +1,43 @@
-# Spacebar Logger
+# Breath Timing Logger
 
-This project logs occurrences of spacebar key presses along with timestamps. It is designed to help users track their interactions with the spacebar for various purposes.
+This project is a simple Python-based logger that records the timing of spacebar presses. It is designed to help users log and analyze their breathing patterns.
 
-## Project Structure
-
-```
-spacebar-logger
-├── src
-│   ├── main.py        # Entry point of the application
-│   └── logger.py      # Contains logging functions
-├── requirements.txt    # Lists project dependencies
-└── README.md           # Project documentation
-```
+## Features
+- Logs the timestamp of each spacebar press.
+- Calculates the time interval between consecutive presses.
+- Saves the data to a dynamically named CSV file.
+- Includes user metadata such as name, lamp version, and stone version.
 
 ## Installation
-
-1. Clone the repository:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/judgeyrose/Breath_Timing_Logger.git
    ```
-   git clone <repository-url>
-   cd spacebar-logger
+2. Navigate to the project directory:
+   ```bash
+   cd Breath_Timing_Logger/spacebar-logger
    ```
-
-2. Install the required dependencies:
-   ```
+3. Install the required dependencies:
+   ```bash
    pip install -r requirements.txt
    ```
 
 ## Usage
+1. Run the main script:
+   ```bash
+   python src/main.py
+   ```
+2. Follow the prompts to enter user metadata.
+3. Press the spacebar to log timestamps and intervals.
+4. Press `ESC` to stop the logger.
 
-To run the application, execute the following command:
-```
-python src/main.py
-```
+## File Structure
+- `src/main.py`: Main script for the logger.
+- `src/logger.py`: Additional logging utilities (if any).
+- `requirements.txt`: List of Python dependencies.
 
-The application will start listening for spacebar key presses and log each occurrence with a timestamp to a log file.
+## Contributing
+Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
-## Dependencies
-
-This project requires the following Python packages:
-- `keyboard`: For capturing keyboard events.
-
-Make sure to install the dependencies listed in `requirements.txt` before running the application.
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
